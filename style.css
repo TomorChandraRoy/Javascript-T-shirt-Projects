@@ -128,17 +128,19 @@ body {
   left: 20px;
   bottom: -4px;
 }
-#mobile{
+
+#mobile {
   display: none;
   align-items: center;
 }
-#close{
+
+#close {
   display: none;
 }
 
 /* home page */
 #hero {
-  background-image: url("img/hero4.png");
+  background-image: url("img/hero2.png");
   height: 90vh;
   width: 100%;
   background-position: top 25% right 0;
@@ -494,6 +496,7 @@ footer .col {
 
 footer .logo {
   margin-bottom: 30px;
+  margin-left: -15px;
 }
 
 footer h4 {
@@ -543,10 +546,12 @@ footer .copyright {
 }
 
 /* media queries responsive  */
+
 @media (max-width: 799px) {
-  #header{
+  #header {
     padding: 6px 10px;
   }
+
   #navbar {
     display: flex;
     flex-direction: column;
@@ -562,22 +567,27 @@ footer .copyright {
     padding: 80px 0 0 10px;
     transition: 0.3s;
   }
-  #navbar.active{
+
+  #navbar.active {
     right: 0px;
   }
-  #navbar li{
+
+  #navbar li {
     margin-bottom: 20px;
   }
-  #mobile{
+
+  #mobile {
     display: flex;
     align-items: flex-end;
   }
-  #mobile i{
+
+  #mobile i {
     font-size: 24px;
     color: #1a1a1a;
     padding-right: 20px;
   }
-  #close{
+
+  #close {
     display: inline;
     font-size: 20px;
     color: #222;
@@ -585,7 +595,59 @@ footer .copyright {
     top: 30px;
     left: 30px;
   }
-  #lg-bag{
+
+  #lg-bag {
     display: none;
   }
+
+  /* hero */
+  #hero {
+    background-image: url("img/hero2.png");
+    height: 80vh;
+    background-position: top 30% right -67px;
+
+  }
+
+  /* bottom 1 banner */
+  #sm-banner .banner-box {
+    min-width: 100%;
+    height: 50vh;
+    margin-top: 12px;
+
+  }
+  /* bottom 2 banner */
+  #banner3 {
+    padding: 0 78px;
+}
+#banner3 .banner-box {
+ width: 100%;
+}
+#newsletter .form {
+  width: 70%;
+}
+}
+@media (max-width: 477px) {
+
+  #header{
+    padding: 10px 0;
+  }
+  #hero {
+    padding: 14px;
+    background-position: 60%;
+  }
+ h1{
+  font-size: 38px;
+ }
+  h2 {
+    font-size: 23px;
+    line-height: 54px;
+    color: #222;
+  }
+  .section-p1 {
+    padding: 20px;
+}
+  #feature .fe-box {
+    width: 145px;
+    margin: 0 0 15px 0;
+}
 }
